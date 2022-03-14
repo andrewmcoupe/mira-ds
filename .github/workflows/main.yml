@@ -8,8 +8,10 @@ on:
       - main
       - "feature/*"
 
+
 jobs:
   build-components:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,10 +19,12 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
+
         run: |
           yarn install
 #          npm install react react-dom styled-components prop-types --save
       - name: Build components
+        working_directory: packages/mira-ds
         run: |
 #          npx figmagic --token ${{ secrets.FIGMA_TOKEN }} --url ${{ secrets.FIGMA_URL }}
           npm run build
