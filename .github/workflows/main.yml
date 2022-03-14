@@ -20,9 +20,7 @@ jobs:
           fetch-depth: 0
       - name: Install dependencies
 
-        run: |
-          yarn install
-#          npm install react react-dom styled-components prop-types --save
+        run: yarn install
       - name: Build components
         working_directory: packages/mira-ds
         run: |
