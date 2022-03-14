@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./index.tsx",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.mjs",
+    "dist/index.d.ts"
+  ],
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 6006",
@@ -11,7 +16,8 @@
     "build": "tsup src/components/index.tsx --format esm,cjs --dts --external react react-dom",
     "dev": "tsup src/components/index.tsx --format esm,cjs --watch --dts --external react react-dom",
     "lint": "TIMING=1 eslint src --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "ds:release": "yarn build && np"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.1",
@@ -39,6 +45,7 @@
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "config": "*",
+    "np": "^7.6.0",
     "tsconfig": "*",
     "tsup": "^5.12.1",
     "typescript": "^4.5.3"
