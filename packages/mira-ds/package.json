@@ -1,0 +1,46 @@
+{
+  "name": "mira-ds",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "tsup src/components/index.tsx --format esm,cjs --dts --external react react-dom",
+    "dev": "tsup src/components/index.tsx --format esm,cjs --watch --dts --external react react-dom",
+    "lint": "TIMING=1 eslint src --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^4.5.1",
+    "@fontsource/recursive": "^4.5.1",
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-icons": "^1.0.3",
+    "@stitches/react": "^1.2.6",
+    "framer-motion": "^4.1.17"
+  },
+  "peerDependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "resolutions": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.18",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "config": "*",
+    "tsconfig": "*",
+    "tsup": "^5.12.1",
+    "typescript": "^4.5.3"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "config": {
+    "title": "Docs",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "0.0.0",
+    "repository": null,
+    "native": false,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "/Users/andycoupe/Workspaces/personal/mira-ds/apps/docs/README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "mira-design-system",
+            "depth": 2,
+            "value": "Mira Design System"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/buttons.mdx",
+      "value": {
+        "name": "Buttons",
+        "id": "98dddcdb9b6ddcfa34c6475cd056e4cc",
+        "filepath": "src/buttons.mdx",
+        "fullpath": "/Users/andycoupe/Workspaces/personal/mira-ds/apps/docs/src/buttons.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-buttons",
+        "route": "/src-buttons",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "buttons",
+            "depth": 1,
+            "value": "Buttons"
+          },
+          {
+            "slug": "basic",
+            "depth": 2,
+            "value": "Basic"
+          },
+          {
+            "slug": "icon",
+            "depth": 2,
+            "value": "Icon"
+          },
+          {
+            "slug": "progress",
+            "depth": 2,
+            "value": "Progress"
+          }
+        ]
+      }
+    }
+  ],
+  "props": []
+}
