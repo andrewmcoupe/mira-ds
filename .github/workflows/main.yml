@@ -11,22 +11,20 @@ on:
 
 jobs:
   build-components:
-
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: Install dependencies
-        working_directory: packages/mira-ds
-        run: yarn install
+        working_directory: 'packages/mira-ds'
+        run: yarn
 
       - name: Build components
-        working_directory: packages/mira-ds
-        run: |
-#          npx figmagic --token ${{ secrets.FIGMA_TOKEN }} --url ${{ secrets.FIGMA_URL }}
-          npm run build
+        working_directory: 'packages/mira-ds'
+        run: yarn build
       # See: https://www.chromatic.com/docs/github-actions
       #- name: Publish to Chromatic
       #  if: github.ref != 'refs/heads/main'
