@@ -19,8 +19,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
-
+        working_directory: packages/mira-ds
         run: yarn install
+
       - name: Build components
         working_directory: packages/mira-ds
         run: |
