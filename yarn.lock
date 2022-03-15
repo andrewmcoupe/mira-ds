@@ -5383,6 +5383,11 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
+chromatic@^6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.5.3.tgz#dd96e6df6d2ed9d0c79277dc18b06a089080ce62"
+  integrity sha512-6Wy2lsNaojY5wTvobE3WV5VrQ5oP7B8kal6zWGrxu9g7Qbenb2cTcQ5SYgQY7tzT0Ed0zeHVyQm4TMmKz+XfXA==
+
 chrome-trace-event@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
@@ -13103,6 +13108,16 @@ minizlib@^2.1.1:
   dependencies:
     minipass "^3.0.0"
     yallist "^4.0.0"
+
+mira-ds@*:
+  version "0.0.1-0"
+  dependencies:
+    "@fontsource/poppins" "^4.5.1"
+    "@fontsource/recursive" "^4.5.1"
+    "@radix-ui/colors" "^0.1.8"
+    "@radix-ui/react-icons" "^1.0.3"
+    "@stitches/react" "^1.2.6"
+    framer-motion "^4.1.17"
 
 mississippi@^3.0.0:
   version "3.0.0"
