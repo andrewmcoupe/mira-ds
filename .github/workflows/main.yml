@@ -25,7 +25,7 @@ jobs:
       - name: Build components
         working-directory: 'packages/mira-ds'
         run: |
-          npx figmagic --token ${{ secrets.FIGMA_TOKEN }} --url ${{ secrets.FIGMA_URL }}
+          npx figmagic --figmaToken ${{ secrets.FIGMA_TOKEN }} --figmaUrl ${{ secrets.FIGMA_URL }}
           yarn build
       # See: https://www.chromatic.com/docs/github-actions
       - name: Publish to Chromatic
