@@ -17,7 +17,7 @@
     "dev": "tsup src/components/index.tsx --format esm,cjs --watch --dts --external react react-dom",
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "ds:release": "yarn build && np",
+    "ds:release": "yarn build && np"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.1",
