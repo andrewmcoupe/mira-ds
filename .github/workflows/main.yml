@@ -29,19 +29,12 @@ jobs:
           yarn build
       # See: https://www.chromatic.com/docs/github-actions
       - name: Publish to Chromatic
+
         if: github.ref != 'refs/heads/main'
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
-          exitZeroOnChanges: true
-          exitOnceUploaded: true
-      - name: Publish to Chromatic
-        if: github.ref == 'refs/heads/main'
-        uses: chromaui/action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: ${{ secrets.CHROMATIC_TOKEN }}
-          autoAcceptChanges: true
+          workingDir: 'packages/mira-ds'
           exitZeroOnChanges: true
           exitOnceUploaded: true
