@@ -1,0 +1,14 @@
+{
+  "name": "mira-style-dictionary",
+  "version": "0.0.0",
+  "main": "./build/variables.js",
+  "module": "./build/variables.js",
+  "types": "./build/design-tokens.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "style-dictionary build"
+  },
+  "devDependencies": {
+    "style-dictionary": "3.7.0"
+  }
+}
