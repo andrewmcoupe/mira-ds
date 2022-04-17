@@ -80,7 +80,7 @@ export const { styled, getCssText, theme, css } = createStitches({
   },
   theme: {
     fonts: {
-      system: "system-mira-ds",
+      system: "system-component-library",
       recursive: "Recursive",
       poppins: '"Poppins", sans-serif',
     },

@@ -1,4 +1,7 @@
 import { styled } from "../../../stitches.config";
+import tokens from "@mira-ds/design-tokens";
+
+const { size, color } = tokens;
 
 const Badge = styled("span", {
   display: "flex",

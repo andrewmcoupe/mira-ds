@@ -1,6 +1,12 @@
 {
-  "name": "mira-style-dictionary",
-  "version": "0.0.0",
+  "name": "@mira-ds/design-tokens",
+  "author": "Andy Coupe",
+  "version": "1.0.0",
+  "description": "The design tokens for Mira Design System",
+  "keywords": [
+    "design-tokens",
+    "tokens"
+  ],
   "main": "./build/variables.js",
   "module": "./build/variables.js",
   "types": "./build/design-tokens.d.ts",

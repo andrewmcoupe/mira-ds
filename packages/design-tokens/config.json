@@ -25,7 +25,10 @@
     "ts": {
       "transformGroup": "js",
       "files": [
-
+        {
+          "format": "typescript/es6-declarations",
+          "destination": "build/variables.d.ts"
+        },
         {
           "format": "typescript/module-declarations",
           "destination": "build/design-tokens.d.ts"

@@ -13176,6 +13176,18 @@ minizlib@^2.1.1:
     minipass "^3.0.0"
     yallist "^4.0.0"
 
+mira-ds@0.0.1-0:
+  version "0.0.1-0"
+  resolved "https://registry.yarnpkg.com/mira-ds/-/mira-ds-0.0.1-0.tgz#bc2627237edaf5d58ec43a57e72700f6bfc9d341"
+  integrity sha512-ztZMG/UjnpjVisKpniwOWLAlli1aUjdmfh0ueA3PoCu5scsUsqsWzaCBcVjZSWMVWTxUlQqHcRb/QuDVhUcqdA==
+  dependencies:
+    "@fontsource/poppins" "^4.5.1"
+    "@fontsource/recursive" "^4.5.1"
+    "@radix-ui/colors" "^0.1.8"
+    "@radix-ui/react-icons" "^1.0.3"
+    "@stitches/react" "^1.2.6"
+    framer-motion "^4.1.17"
+
 mississippi@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/mississippi/-/mississippi-3.0.0.tgz#ea0a3291f97e0b5e8776b363d5f0a12d94c67022"
@@ -17606,7 +17618,7 @@ strtok3@^6.2.4:
     "@tokenizer/token" "^0.3.0"
     peek-readable "^4.1.0"
 
-style-dictionary@^3.7.0:
+style-dictionary@3.7.0, style-dictionary@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/style-dictionary/-/style-dictionary-3.7.0.tgz#02f4b17232cbb1142a3fdc09a17dfb08aafde3b0"
   integrity sha512-BL4AQS5kNDBXbFHWJhlCve6+ojnHgHkiwhf2nNByU698elXWdyK5b27OprphT4q0/tJ52zB+lodhqxIxbNOajQ==
