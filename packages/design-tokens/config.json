@@ -19,6 +19,7 @@
     },
     "ts": {
       "transformGroup": "js",
+      "transforms": ["attribute/cti", "name/cti/constant"],
       "files": [
         {
           "format": "typescript/es6-declarations",
