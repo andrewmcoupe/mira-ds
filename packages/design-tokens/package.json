@@ -1,7 +1,7 @@
 {
   "name": "@mira-ds/design-tokens",
   "author": "Andy Coupe",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "The design tokens for Mira Design System",
   "keywords": [
     "design-tokens",
@@ -9,9 +9,10 @@
   ],
   "main": "./build/variables.js",
   "module": "./build/variables.js",
-  "types": "./build/design-tokens.d.ts",
+  "types": "./build/variables.d.ts",
   "license": "MIT",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "style-dictionary build"
   },
   "devDependencies": {

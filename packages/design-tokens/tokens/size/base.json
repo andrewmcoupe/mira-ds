@@ -1,0 +1,15 @@
+{
+  "size": {
+    "base": {
+      "tiny": { "value": "6" },
+      "small": { "value": "8" },
+      "medium": { "value": "16" },
+      "large": { "value": "24" },
+      "xl": { "value": "32" },
+      "xxl": { "value": "40" },
+      "xxxl": { "value": "48" },
+      "xxxxl": { "value": "56" },
+      "base": { "value": "{size.base.medium.value}" }
+    }
+  }
+}

@@ -26,7 +26,7 @@
     "@radix-ui/react-icons": "^1.0.3",
     "@stitches/react": "^1.2.6",
     "framer-motion": "^4.1.17",
-    "@mira-ds/design-tokens": "^1.0.0"
+    "@mira-ds/design-tokens": "*"
   },
   "peerDependencies": {
     "react": "17.0.2",

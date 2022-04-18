@@ -1,7 +1,6 @@
 import { createStitches, createTheme, globalCss } from "@stitches/react";
 export type { VariantProps } from "@stitches/react";
-import mediaQueries from "./tokens/mediaQueries";
-import spacing from "./tokens/spacing";
+import * as tokens from "@mira-ds/design-tokens";
 
 import {
   orange,
@@ -70,10 +69,10 @@ export const { styled, getCssText, theme, css } = createStitches({
     }),
   },
   media: {
-    bp1: `(min-width: ${mediaQueries.bp1})`,
-    bp2: `(min-width: ${mediaQueries.bp2})`,
-    bp3: `(min-width: ${mediaQueries.bp3})`,
-    bp4: `(min-width: ${mediaQueries.bp4})`,
+    bp1: `(min-width: 520px)`,
+    bp2: `(min-width: 900px)`,
+    bp3: `(min-width: 1200px)`,
+    bp4: `(min-width: 1800px)`,
     motion: "(prefers-reduced-motion)",
     dark: "(prefers-color-scheme: dark)",
     light: "(prefers-color-scheme: light)",
@@ -107,7 +106,9 @@ export const { styled, getCssText, theme, css } = createStitches({
       10: "72px",
       11: "96px",
     },
-    space: spacing,
+    space: {
+      tiny: tokens.SizePaddingTiny,
+    },
     zIndices: {
       beneath: -1,
       normal: "auto",

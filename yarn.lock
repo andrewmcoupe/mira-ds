@@ -8333,11 +8333,6 @@ figgy-pudding@^3.5.1:
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
   integrity sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==
 
-figmagic@^4.4.4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/figmagic/-/figmagic-4.4.4.tgz#03a0d0364013db68e4e42eea5834da45414bd96f"
-  integrity sha512-ixt1ICtcrcv9VGFpRTCrHiwN/VZj4LhQUGBF45DhJhO+E3uX7EUCYa/Hdw35sx/jPynznLhbClE4ApK+RSTyMw==
-
 figures@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
