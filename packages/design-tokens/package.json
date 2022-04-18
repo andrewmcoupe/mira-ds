@@ -7,15 +7,18 @@
     "design-tokens",
     "tokens"
   ],
-  "main": "./build/variables.js",
-  "module": "./build/variables.js",
-  "types": "./build/variables.d.ts",
+  "main": "./build/tokens.js",
+  "module": "./build/tokens.js",
+  "types": "./build/tokens.d.ts",
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "style-dictionary build"
+    "build": "node build.js"
   },
   "devDependencies": {
-    "style-dictionary": "3.7.0"
+    "@changesets/cli": "^2.22.0",
+    "@types/tinycolor2": "^1.4.3",
+    "style-dictionary": "3.7.0",
+    "tinycolor2": "^1.4.2"
   }
 }
