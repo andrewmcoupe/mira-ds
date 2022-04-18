@@ -1,6 +1,5 @@
 import { createStitches, createTheme, globalCss } from "@stitches/react";
 export type { VariantProps } from "@stitches/react";
-import * as tokens from "@mira-ds/design-tokens";
 
 import {
   orange,

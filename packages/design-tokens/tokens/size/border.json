@@ -1,9 +1,0 @@
-{
-  "size": {
-    "border": {
-      "1": { "value": "1px" },
-      "2": { "value": "2px" },
-      "base": { "value": "{size.border.1.value}" }
-    }
-  }
-}
