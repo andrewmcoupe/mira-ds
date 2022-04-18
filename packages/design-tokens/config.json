@@ -12,7 +12,7 @@
       ],
       "files": [
         {
-          "destination": "variables.js",
+          "destination": "tokens.js",
           "format": "javascript/es6"
         }
       ]
@@ -22,7 +22,7 @@
       "files": [
         {
           "format": "typescript/es6-declarations",
-          "destination": "build/variables.d.ts"
+          "destination": "build/tokens.d.ts"
         }
       ]
     }
