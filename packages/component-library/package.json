@@ -1,6 +1,6 @@
 {
   "name": "@mira-ds/components",
-  "version": "0.0.1-0",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -10,6 +10,9 @@
     "dist/index.d.ts"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -26,7 +29,6 @@
     "@fontsource/poppins": "^4.5.1",
     "@fontsource/recursive": "^4.5.1",
     "@mira-ds/design-tokens": "*",
-    "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-icons": "^1.0.3",
     "@stitches/react": "^1.2.6",
     "framer-motion": "^4.1.17"

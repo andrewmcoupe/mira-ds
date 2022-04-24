@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "mira-ds",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -13,7 +13,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "release": "turbo run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",

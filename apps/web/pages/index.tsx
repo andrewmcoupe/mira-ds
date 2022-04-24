@@ -1,4 +1,4 @@
-import { Button } from "component-library";
+import { Button } from "@mira-ds/components";
 
 export default function Web() {
   return (
