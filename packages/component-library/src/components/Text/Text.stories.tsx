@@ -14,7 +14,7 @@ export default {
     },
     size: {
       control: "select",
-      options: ["small", "medium", "large"],
+      options: ["tiny", "small", "medium", "large"],
       defaultValue: "medium",
     },
     color: {
@@ -29,20 +29,20 @@ const Template: ComponentStory<typeof Text> = (
   args: ComponentMeta<typeof Text>
 ) => <Text {...args} />;
 
+export const Tiny = Template.bind({});
+Tiny.args = {
+  size: "1",
+};
 export const Small = Template.bind({});
 Small.args = {
-  size: "1",
+  size: "2",
 };
 export const Medium = Template.bind({});
 Medium.args = {
-  size: "2",
+  size: "3",
 };
 export const Large = Template.bind({});
 Large.args = {
-  size: "3",
-};
-export const ExtraLarge = Template.bind({});
-ExtraLarge.args = {
   size: "4",
 };
 

@@ -3,22 +3,22 @@ import { styled } from "../../../stitches.config";
 import type { WithChildren } from "../../utils/types";
 
 const CardBase = styled("article", {
-  borderRadius: "$2",
+  borderRadius: "$small",
   border: "1px solid $gray7",
   backgroundColor: "$cardBg",
-  padding: "$4",
+  padding: "$large",
 });
 
 const CardWrapper = styled("div", {
   display: "flex",
   flexDirection: "column",
-  gap: "$2",
+  gap: "$medium",
   height: "100%",
 });
 
 const CardHeader = styled("header", {
   fontWeight: "$bold",
-  fontSize: "$5",
+  fontSize: "$large",
 });
 
 const CardBody = styled("section", {
@@ -27,7 +27,7 @@ const CardBody = styled("section", {
 
 const CardFooter = styled("footer", {
   fontWeight: "bold",
-  fontSize: "$2",
+  fontSize: "$medium",
 });
 
 const Card = (props: WithChildren) => (

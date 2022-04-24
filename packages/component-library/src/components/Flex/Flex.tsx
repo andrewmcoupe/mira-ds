@@ -2,7 +2,7 @@ import { styled } from "../../../stitches.config";
 
 const Flex = styled("div", {
   display: "flex",
-  gap: "$2",
+  gap: "$small",
 
   defaultVariants: {
     direction: "row",

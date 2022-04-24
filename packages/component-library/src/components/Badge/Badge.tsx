@@ -1,16 +1,13 @@
 import { styled } from "../../../stitches.config";
-import tokens from "@mira-ds/design-tokens";
-
-const { size, color } = tokens;
 
 const Badge = styled("span", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  fontSize: "$2",
+  fontSize: "$small",
   maxWidth: "max-content",
-  padding: "3px 8px",
-  borderRadius: "$1",
+  padding: "$tiny $small",
+  borderRadius: "$small",
 
   defaultVariants: {
     color: "red",

@@ -5,11 +5,11 @@ const Heading = styled("h1", {
   margin: "0",
   overflowWrap: "break-word",
   fontWeight: "$7",
-  fontSize: "$7",
-  marginBottom: "$3",
+  fontSize: "$xxl",
+  marginBottom: "$medium",
 
   "@bp2": {
-    fontSize: "$8",
+    fontSize: "$xxxl",
   },
 
   defaultVariants: {
@@ -28,22 +28,22 @@ const Heading = styled("h1", {
     },
     size: {
       1: {
-        fontSize: "$8",
+        fontSize: "$xxxl",
       },
       2: {
-        fontSize: "$7",
+        fontSize: "$xxl",
       },
       3: {
-        fontSize: "$6",
+        fontSize: "$large",
       },
       4: {
-        fontSize: "$5",
+        fontSize: "$medium",
       },
       5: {
-        fontSize: "$4",
+        fontSize: "$small",
       },
       6: {
-        fontSize: "$3",
+        fontSize: "$tiny",
       },
     },
   },

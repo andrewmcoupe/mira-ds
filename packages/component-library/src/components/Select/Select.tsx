@@ -9,9 +9,9 @@ const Presentational = styled("div", {
   justifyContent: "space-between",
   alignItems: "center",
   backgroundColor: "$gray3",
-  borderRadius: "$2",
+  borderRadius: "$small",
   height: "33px",
-  padding: "$1",
+  padding: "$small $medium",
   color: "$gray11",
   width: "auto",
 });
@@ -48,7 +48,7 @@ const Wrapper = styled("div", {
 });
 
 const IconWrapper = styled("span", {
-  marginLeft: "$2",
+  marginLeft: "$small",
 });
 
 type SelectProps = React.ComponentProps<typeof NativeSelect> & {

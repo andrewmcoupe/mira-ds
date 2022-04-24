@@ -1,12 +1,11 @@
 import { styled } from "../../../stitches.config";
-import * as Icons from "@radix-ui/react-icons";
 import { ComponentProps } from "@stitches/react";
 import React from "react";
 
 const StyledButton = styled("button", {
-  borderRadius: "$3",
-  padding: "0 $3",
-  fontSize: "$4",
+  borderRadius: "$medium",
+  padding: "0 $medium",
+  fontSize: "$large",
   cursor: "pointer",
   userSelect: "none",
   height: "44px",

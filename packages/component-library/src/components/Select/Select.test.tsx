@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { vi } from "vitest";
 import Select from "./Select";
 
 describe("Select", () => {
@@ -31,7 +32,7 @@ describe("Select", () => {
   });
 
   it("should invoke the onChange prop when an option is selected", async () => {
-    const mockOnChange = jest.fn();
+    const mockOnChange = vi.fn();
     const { getByRole } = render(
       <Select onChange={mockOnChange}>
         <option value="1">Option 1</option>
@@ -45,7 +46,7 @@ describe("Select", () => {
     const selectElement = getByRole("combobox");
 
     // Select option 2 from the options
-    userEvent.selectOptions(selectElement, "Option 2");
+    await userEvent.selectOptions(selectElement, "Option 2");
 
     expect(option2.selected).toBe(true);
     expect(mockOnChange).toHaveBeenCalledTimes(1);

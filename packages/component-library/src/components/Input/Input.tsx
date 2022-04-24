@@ -5,9 +5,9 @@ import * as Icons from "@radix-ui/react-icons";
 
 export const StyledTextField = styled("input", {
   background: "$gray1",
-  borderRadius: "$3",
+  borderRadius: "$medium",
   border: "1px solid $gray6",
-  padding: "$1 $2",
+  padding: "$tiny $medium",
   outline: "none",
   color: "$hiContrast",
   height: "30px",
@@ -43,7 +43,7 @@ const IconInputWrapper = styled("div", {
   "& > svg": {
     position: "absolute",
     top: "50%",
-    left: "calc($xs * 2)",
+    left: "calc($tiny * 2)",
     transform: "translateY(-50%)",
     color: "$gray8",
     width: 22,
@@ -65,13 +65,14 @@ export const Input = React.forwardRef<HTMLInputElement, StyledTextFieldProps>(
           <IconElement />
           <StyledTextField
             {...props}
-            css={{ paddingLeft: "$5" }}
+            css={{ paddingLeft: "$xxl" }}
             ref={forwardedRef}
           />
         </IconInputWrapper>
       );
     }
 
+    console.log("props REF", props.ref);
     // @ts-ignore
     return <StyledTextField {...props} ref={forwardedRef} />;
   }

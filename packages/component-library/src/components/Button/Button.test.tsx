@@ -1,5 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
+import { describe, it, expect, vi } from "vitest";
 import StyledButton from "./Button";
 
 describe("Button", () => {
@@ -9,7 +10,7 @@ describe("Button", () => {
   });
 
   it("should call the onClick handler", () => {
-    const mockOnClickHandler = jest.fn();
+    const mockOnClickHandler = vi.fn();
     const { getByText } = render(
       <StyledButton onClick={mockOnClickHandler}>Hello World</StyledButton>
     );

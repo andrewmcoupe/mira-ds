@@ -11,7 +11,7 @@ export default {
 export const Default = () => <Label>Label</Label>;
 export const WithInput = () => (
   <>
-    <Label htmlFor={"username"} css={{ marginRight: "$2" }}>
+    <Label htmlFor={"username"} css={{ marginRight: "$small" }}>
       GitHub username
     </Label>
     <Input id={"username"} icon={"GitHubLogoIcon"} />
