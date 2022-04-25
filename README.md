@@ -1,4 +1,4 @@
-# 💅 Mira Design System
+# 💅 Mira Design System 🕺
 
 This is the monorepo/Turborepo for the Mira Design System (personal design system for Andy Coupe).
 
@@ -11,8 +11,8 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 ### Apps and Packages
 
 - `web`: a [Next.js](https://nextjs.org) app, used as documentation for the design system.
-- `component-library`: the component library, available as an npm package 
-- `design-tokens`: the design tokens, built with [Style Dictionary](https://amzn.github.io/style-dictionary) and also available as an npm package. 
+- `component-library`: the component library, available as an [npm package](https://www.npmjs.com/package/@mira-ds/design-tokens).
+- `design-tokens`: the design tokens, built with [Style Dictionary](https://amzn.github.io/style-dictionary) and also available as an [npm package](https://www.npmjs.com/package/@mira-ds/components). 
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
