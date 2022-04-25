@@ -1,16 +1,18 @@
-# Turborepo starter
+# 💅 Mira Design System
 
-This is an official Yarn v1 starter turborepo.
+This is the monorepo/Turborepo for the Mira Design System (personal design system for Andy Coupe).
 
 ## What's inside?
 
 This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
 
+### Utilities
+
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `web`: a [Next.js](https://nextjs.org) app, used as documentation for the design system.
+- `component-library`: the component library, available as an npm package 
+- `design-tokens`: the design tokens, built with [Style Dictionary](https://amzn.github.io/style-dictionary) and also available as an npm package. 
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -18,7 +20,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
-This turborepo has some additional tools already setup for you:
+This monorepo has some additional tools setup:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
@@ -33,7 +35,6 @@ This repository is used in the `npx create-turbo` command, and selected when cho
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run build
 ```
 
@@ -42,7 +43,6 @@ yarn run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run dev
 ```
 
@@ -53,7 +53,6 @@ Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo
 By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 npx turbo login
 ```
 
