@@ -4,7 +4,7 @@ This package exports all the design tokens for Mira Design System.
 
 To build  the tokens run:
 ```bash
-style-dictionary build
+yarn build
 ```
 ## Usage
 ```typescript
