@@ -22,7 +22,8 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.1",
