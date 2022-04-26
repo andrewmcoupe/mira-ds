@@ -1,21 +1,24 @@
 {
   "name": "@mira-ds/design-tokens",
   "author": "Andy Coupe",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "The design tokens for Mira Design System",
   "keywords": [
     "design-tokens",
     "tokens"
   ],
+  "files": [
+    "build/**/*.js"
+  ],
   "main": "./build/tokens.js",
-  "module": "./build/tokens.mjs",
+  "module": "./build/tokens.js",
   "types": "./build/tokens.d.ts",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "prepublishOnly": "node build.js",
+    "prepare": "npm run build",
     "build": "node build.js"
   },
   "devDependencies": {
