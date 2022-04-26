@@ -14,6 +14,10 @@
         {
           "destination": "tokens.js",
           "format": "javascript/es6"
+        },
+        {
+          "destination": "tokens.mjs",
+          "format": "javascript/module-flat"
         }
       ]
     },

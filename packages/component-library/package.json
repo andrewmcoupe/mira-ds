@@ -1,6 +1,6 @@
 {
   "name": "@mira-ds/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -16,14 +16,13 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "tsup src/components/index.tsx --format esm,cjs --dts --external react react-dom",
-    "dev": "tsup src/components/index.tsx --format esm,cjs --watch --dts --external react react-dom",
+    "build": "tsup src/components/index.tsx --format esm,cjs --dts --external react react-dom @mira-ds/design-tokens",
+    "dev": "tsup src/components/index.tsx --format esm,cjs --watch --dts --external react react-dom ",
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "cypress:open": "cypress open",
-    "prepare": "yarn build"
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.1",

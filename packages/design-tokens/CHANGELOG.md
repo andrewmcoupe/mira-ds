@@ -1,13 +1,7 @@
 # @mira-ds/design-tokens
 
-## 1.0.10
+## 1.0.11
 
 ### Patch Changes
 
-- Update readme for build script
-
-## 1.0.9
-
-### Patch Changes
-
-- Make publishing public
+- Add commonJS bundle
