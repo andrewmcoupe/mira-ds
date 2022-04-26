@@ -1,5 +1,11 @@
 # @mira-ds/design-tokens
 
+## 1.0.15
+
+### Patch Changes
+
+- add prepare script
+
 ## 1.0.14
 
 ### Patch Changes

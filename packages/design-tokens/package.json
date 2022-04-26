@@ -1,7 +1,7 @@
 {
   "name": "@mira-ds/design-tokens",
   "author": "Andy Coupe",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "The design tokens for Mira Design System",
   "keywords": [
     "design-tokens",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "yarn build",
     "build": "node build.js"
   },
   "devDependencies": {
