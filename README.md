@@ -1,10 +1,10 @@
 # 💅 Mira Design System 🕺
 
-This is the monorepo/Turborepo for the Mira Design System (personal design system for Andy Coupe).
+This is the Turborepo for the Mira Design System (personal design system for Andy Coupe).
 
 ## What's inside?
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
+This Turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
 
 ### Utilities
 
@@ -62,6 +62,28 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 
 ```
 npx turbo link
+```
+
+## Releasing
+
+The changeset CLI is used to manage changesets and releases.
+
+To add a changeset, run the following command:
+
+```
+yarn changeset
+```
+
+To bump the versions of any changed packages, run the following command:
+
+```
+yarn version-packages
+```
+
+To release new versions of any packages, run the following command:
+
+```
+yarn release
 ```
 
 ## Useful Links
