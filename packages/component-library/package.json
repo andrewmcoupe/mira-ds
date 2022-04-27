@@ -1,6 +1,6 @@
 {
   "name": "@mira-ds/components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "source": "src/components/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@fontsource/poppins": "^4.5.1",
     "@fontsource/recursive": "^4.5.1",
-    "@mira-ds/design-tokens": "^1.0.17",
+    "@mira-ds/design-tokens": "^1.0.18",
     "@radix-ui/react-icons": "^1.0.3",
     "@stitches/react": "^1.2.6",
     "framer-motion": "^4.1.17"
