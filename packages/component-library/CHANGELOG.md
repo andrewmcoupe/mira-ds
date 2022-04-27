@@ -1,5 +1,15 @@
 # @mira-ds/components
 
+## 0.0.8
+
+### Patch Changes
+
+- Bump
+- bump
+- Updated dependencies
+- Updated dependencies
+  - @mira-ds/design-tokens@1.0.17
+
 ## 0.0.7
 
 ### Patch Changes
