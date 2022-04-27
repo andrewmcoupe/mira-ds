@@ -1,8 +1,8 @@
 {
   "name": "@mira-ds/components",
-  "version": "0.0.6",
+  "version": "0.0.7",
+  "source": "src/components/index.tsx",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "files": [
@@ -17,7 +17,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "tsup src/components/index.tsx --format esm,cjs --dts --external react react-dom @mira-ds/design-tokens",
+    "build": "parcel build  --bundle-node-modules",
     "dev": "tsup src/components/index.tsx --format esm,cjs --watch --dts --external react react-dom ",
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
@@ -67,6 +67,7 @@
     "cypress": "^9.5.0",
     "jsdom": "^19.0.0",
     "np": "^7.6.0",
+    "parcel": "^2.5.0",
     "prettier": "^2.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

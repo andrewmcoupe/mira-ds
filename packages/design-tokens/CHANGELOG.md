@@ -1,5 +1,11 @@
 # @mira-ds/design-tokens
 
+## 1.0.16
+
+### Patch Changes
+
+- Add prepare scriot
+
 ## 1.0.15
 
 ### Patch Changes
