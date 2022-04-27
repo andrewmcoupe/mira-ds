@@ -1,5 +1,11 @@
 # @mira-ds/components
 
+## 0.0.9
+
+### Patch Changes
+
+- Bump
+
 ## 0.0.8
 
 ### Patch Changes

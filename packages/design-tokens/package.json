@@ -12,7 +12,6 @@
     "build/**/*.mjs"
   ],
   "main": "./build/tokens.js",
-  "module": "./build/tokens.mjs",
   "types": "./build/tokens.d.ts",
   "license": "MIT",
   "publishConfig": {

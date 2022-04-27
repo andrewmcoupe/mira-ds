@@ -16,7 +16,7 @@
           "format": "javascript/es6"
         },
         {
-          "destination": "tokens.mjs",
+          "destination": "tokens.cjs",
           "format": "javascript/module-flat"
         }
       ]

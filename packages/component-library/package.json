@@ -1,6 +1,6 @@
 {
   "name": "@mira-ds/components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "source": "src/components/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
