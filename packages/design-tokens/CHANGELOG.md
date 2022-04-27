@@ -1,5 +1,11 @@
 # @mira-ds/design-tokens
 
+## 1.0.18
+
+### Patch Changes
+
+- Fix build output
+
 ## 1.0.17
 
 ### Patch Changes
