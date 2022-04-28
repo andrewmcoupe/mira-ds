@@ -1,5 +1,11 @@
 # @mira-ds/components
 
+## 0.0.11
+
+### Patch Changes
+
+- Update design tokens version
+
 ## 0.0.10
 
 ### Patch Changes
