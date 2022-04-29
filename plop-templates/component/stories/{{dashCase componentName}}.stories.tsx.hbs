@@ -1,0 +1,14 @@
+import * as React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { {{capitalize componentName}} } from "../src";
+
+export default {
+  title: "Components/{{capitalize componentName}}",
+  argTypes: {
+    children: {},
+  },
+} as ComponentMeta<typeof {{capitalize componentName}}>;
+
+const Template: ComponentStory<typeof {{capitalize componentName}}> = (
+  args: ComponentMeta<typeof {{capitalize componentName}}>
+) => <{{capitalize componentName}} {...args} />;

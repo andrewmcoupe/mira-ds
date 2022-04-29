@@ -1,13 +1,10 @@
-
-
-name: 'Build components'
+name: "Build components"
 
 on:
   push:
     branches:
       - main
       - "feature/*"
-
 
 jobs:
   build-components:
@@ -19,11 +16,11 @@ jobs:
           fetch-depth: 0
 
       - name: Install dependencies
-        working-directory: 'packages/component-library'
+        working-directory: "packages/component-library"
         run: yarn
 
       - name: Build components
-        working-directory: 'packages/component-library'
+        working-directory: "packages/component-library"
         run: |
           npx figmagic --token ${{ secrets.FIGMA_TOKEN }} --url ${{ secrets.FIGMA_URL }}
           yarn build
@@ -35,6 +32,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
-          workingDir: 'packages/component-library'
+          workingDir: "packages/component-library"
           exitZeroOnChanges: true
           exitOnceUploaded: true
