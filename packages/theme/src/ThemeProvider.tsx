@@ -39,4 +39,4 @@ const MiraThemeProvider = ({
   </>
 );
 
-export { MiraThemeProvider, GlobalStyle, createGlobalStyle };
+export { MiraThemeProvider };
