@@ -22,20 +22,16 @@
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "vitest",
-    "test:ui": "vitest --ui",
-    "cypress:open": "cypress open"
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.5.1",
-    "@fontsource/recursive": "^4.5.1",
-    "@mira-ds/design-tokens": "^1.0.18",
     "@radix-ui/react-icons": "^1.0.3",
-    "@stitches/react": "^1.2.6",
     "framer-motion": "^4.1.17"
   },
   "peerDependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "@mira-ds/theme-provider": "^0.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -60,7 +56,6 @@
     "babel-loader": "^8.2.3",
     "chromatic": "^6.5.3",
     "config": "*",
-    "cypress": "^9.5.0",
     "jsdom": "^19.0.0",
     "np": "^7.6.0",
     "parcel": "^2.5.0",
