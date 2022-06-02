@@ -6,6 +6,7 @@
   "files": [
     "eslint-preset.js"
   ],
+  "private": true,
   "dependencies": {
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
