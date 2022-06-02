@@ -1,6 +1,6 @@
 {
   "name": "@mira-ds/components",
-  "version": "0.0.13",
+  "version": "1.0.0",
   "source": "src/components/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -31,7 +31,7 @@
   "peerDependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "@mira-ds/theme-provider": "^0.0.4"
+    "@mira-ds/theme-provider": "^0.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
