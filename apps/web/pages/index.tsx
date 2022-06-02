@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Foo = styled(Button)`
   background: ${({ theme }) => theme.colors.blue10};
-  ${({ theme }) => theme.utils.px(12)}
+  ${({ theme }) => theme.utils.px(24)}
 `;
 
 export default function Web() {
