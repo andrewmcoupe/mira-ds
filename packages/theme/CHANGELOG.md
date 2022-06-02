@@ -1,5 +1,17 @@
 # @mira-ds/theme-provider
 
+## 0.0.4
+
+### Patch Changes
+
+- Make theme optional
+
+## 0.0.3
+
+### Patch Changes
+
+- Add prepublish
+
 ## 0.0.2
 
 ### Patch Changes

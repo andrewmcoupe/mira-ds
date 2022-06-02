@@ -1,5 +1,11 @@
 # @mira-ds/components
 
+## 0.0.13
+
+### Patch Changes
+
+- Make theme optional
+
 ## 0.0.12
 
 ### Patch Changes

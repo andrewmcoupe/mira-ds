@@ -1,5 +1,4 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-import { WithChildren } from "@mira-ds/components/src/utils/types";
 import { theme } from "./theme";
 
 const DEFAULT_THEME = theme;
@@ -7,7 +6,7 @@ const DEFAULT_THEME = theme;
 const GlobalStyle = createGlobalStyle`
   * { 
     margin: 0; 
-    font-family: "$poppins" ,sans-serif 
+    font-family: "Poppins", sans-serif;
   }
 
   *::before {
@@ -32,7 +31,10 @@ const GlobalStyle = createGlobalStyle`
 const MiraThemeProvider = ({
   children,
   theme,
-}: WithChildren<{ theme: {} }>) => (
+}: {
+  theme?: {};
+  children: any;
+}) => (
   <>
     <GlobalStyle />
     <ThemeProvider theme={theme ?? DEFAULT_THEME}>{children}</ThemeProvider>

@@ -25,7 +25,8 @@
     "plop": "^3.1.0",
     "prettier": "^2.5.1",
     "turbo": "latest",
-    "typescript": ">=3.0.0"
+    "typescript": ">=3.0.0",
+    "yalc": "^1.0.0-pre.53"
   },
   "engines": {
     "npm": ">=7.0.0",
