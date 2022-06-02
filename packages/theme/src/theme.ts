@@ -140,8 +140,8 @@ export const theme = {
       marginTop: value,
     }),
     my: (value: any) => ({
-      marginTop: value,
-      marginBottom: value,
+      "margin-top": value,
+      "margin-bottom": value,
     }),
     mx: (value: any) => ({
       marginTop: value,

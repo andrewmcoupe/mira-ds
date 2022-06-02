@@ -1,0 +1,10 @@
+{
+  "asset": {
+    "font": {
+      "inter": {
+        "name": { "value": "Inter" },
+        "ttf": { "value": "assets/fonts/Inter-Regular.ttf" }
+      }
+    }
+  }
+}
