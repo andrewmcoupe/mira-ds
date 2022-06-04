@@ -1,0 +1,31 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import { Heading } from "./Heading";
+
+<Meta title="Components/Heading" component={Heading} />
+
+export const Template = (args) => <Heading {...args} />;
+
+# Heading
+
+The Heading component should be used as a page or section title.
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      children: "Welcome to the show",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Emphasised"
+    args={{
+      children: "Welcome to the show",
+      variant: "emphasis",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

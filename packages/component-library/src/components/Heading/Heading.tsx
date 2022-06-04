@@ -1,52 +1,31 @@
-import { FunctionComponent } from "react";
-import { styled } from "../../../stitches.config";
+import styled from "styled-components";
+import { variant } from "styled-system";
 
-const Heading = styled("h1", {
-  margin: "0",
-  overflowWrap: "break-word",
-  fontWeight: "$7",
-  fontSize: "$xxl",
-  marginBottom: "$medium",
+const DEFAULT_TAG = "h1";
 
-  "@bp2": {
-    fontSize: "$xxxl",
+const variants = {
+  default: {
+    background: "none",
   },
-
-  defaultVariants: {
-    size: "1",
+  emphasis: {
+    background:
+      "linear-gradient(90deg, rgba(75,195,137,1) 35%, rgba(0,106,219,1) 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
   },
+};
 
-  variants: {
-    gradient: {
-      true: {
-        backgroundColor: "rgb(255,48,48)",
-        backgroundImage:
-          "linear-gradient(90deg, rgba(255,48,48,1) 4%, rgba(118,226,43,1) 48%, rgba(75,225,255,1) 100%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      },
-    },
-    size: {
-      1: {
-        fontSize: "$xxxl",
-      },
-      2: {
-        fontSize: "$xxl",
-      },
-      3: {
-        fontSize: "$large",
-      },
-      4: {
-        fontSize: "$medium",
-      },
-      5: {
-        fontSize: "$small",
-      },
-      6: {
-        fontSize: "$tiny",
-      },
-    },
-  },
-});
+export const Heading = styled(DEFAULT_TAG)<{ variant?: keyof typeof variants }>(
+  variant({ variants }),
+  ({ theme }) => ({
+    margin: 0,
+    fontSize: theme.fontSizes.xl,
+    overflowWrap: "break-word",
+    fontWeight: theme.fontWeights.bold,
+    marginBottom: theme.space.large,
+  })
+);
 
-export default Heading;
+Heading.defaultProps = {
+  variant: "default",
+};
