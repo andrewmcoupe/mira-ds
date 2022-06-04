@@ -1,5 +1,13 @@
 # @mira-ds/components
 
+## 1.0.2
+
+### Patch Changes
+
+- Add font
+- Updated dependencies
+  - @mira-ds/theme-provider@0.1.2
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1604,6 +1604,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/inter@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.10.tgz#c4e6839197dc4c77842eae9475ff0e036ff87fc9"
+  integrity sha512-YOt2/K8yo25MVBjrTImHxVimmyZEt0GcrWp2w7O29sdFX9SJqbGlOqjFJ1wI5yBbP6AmTeimyPE0UC/jjFRoIA==
+
 "@fontsource/poppins@^4.5.1":
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.3.tgz#0d50e7c48cac6dab2b76d7e711001256875cc2b0"

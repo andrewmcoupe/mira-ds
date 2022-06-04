@@ -1,7 +1,7 @@
 {
   "name": "@mira-ds/theme-provider",
   "author": "Andy Coupe",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "source": "src/index.ts",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,6 +27,7 @@
     "react-dom": "^17.0.0"
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.10",
     "@mira-ds/design-tokens": "^1.1.0",
     "styled-components": "^5.3.5"
   },

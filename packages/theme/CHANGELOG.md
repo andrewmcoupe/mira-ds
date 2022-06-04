@@ -1,5 +1,11 @@
 # @mira-ds/theme-provider
 
+## 0.1.2
+
+### Patch Changes
+
+- Add font
+
 ## 0.1.1
 
 ### Patch Changes
