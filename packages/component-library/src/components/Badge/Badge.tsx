@@ -1,52 +1,41 @@
 import styled from "styled-components";
+import { variant } from "styled-system";
 
-export const Badge = styled.span`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: ${({ theme }) => theme.fontSizes.small};
-  max-width: max-content;
-  padding: ${({ theme }) => theme.space.small};
-`;
+const variants = {
+  default: {
+    backgroundColor: "gray2",
+    color: "gray11",
+  },
+  error: {
+    backgroundColor: "red3",
+    color: "red11",
+  },
+  success: {
+    backgroundColor: "green4",
+    color: "green11",
+  },
+  warning: {
+    backgroundColor: "orange3",
+    color: "orange11",
+  },
+};
 
-// <Badge variant="error">Error - you have an error</Badge>;
+export type BadgeProps = {
+  variant?: keyof typeof variants;
+};
 
-// const Badge = styled("span", {
-//   display: "flex",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   fontSize: "$small",
-//   maxWidth: "max-content",
-//   padding: "$tiny $small",
-//   borderRadius: "$small",
+export const Badge = styled("span")<BadgeProps>(
+  (props) => ({
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    maxWidth: "max-content",
+    borderRadius: props.theme.radii.small,
+    padding: `${props.theme.space.tiny} ${props.theme.space.small}`,
+  }),
+  variant({ variants })
+);
 
-//   defaultVariants: {
-//     color: "red",
-//   },
-//   variants: {
-//     color: {
-//       red: {
-//         backgroundColor: "$red4",
-//         color: "$red11",
-//       },
-//       green: {
-//         backgroundColor: "$green4",
-//         color: "$green11",
-//       },
-//       blue: {
-//         backgroundColor: "$blue4",
-//         color: "$blue11",
-//       },
-//       orange: {
-//         backgroundColor: "$orange4",
-//         color: "$orange11",
-//       },
-//       contrast: {
-//         backgroundColor: "$gray9",
-//         color: "$loContrast",
-//       },
-//     },
-//   },
-// });
-
-export default Badge;
+Badge.defaultProps = {
+  variant: "default",
+};

@@ -1,5 +1,4 @@
-import { globalStyles } from "../stitches.config";
-import "@fontsource/poppins";
+import { MiraThemeProvider } from "@mira-ds/theme-provider";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -13,11 +12,10 @@ export const parameters = {
 
 export const decorators = [
   (Story) => {
-    globalStyles();
     return (
-      <div>
+      <MiraThemeProvider>
         <Story />
-      </div>
+      </MiraThemeProvider>
     );
   },
 ];

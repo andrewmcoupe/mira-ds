@@ -1,11 +1,15 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import Badge from "./Badge";
+import { render } from "@testing-library/react";
+import { MiraThemeProvider } from "@mira-ds/theme-provider";
+import { Badge } from "./Badge";
+
+const renderWithTheme = (element: React.ReactNode) => {
+  return render(<MiraThemeProvider>{element}</MiraThemeProvider>);
+};
 
 describe("Badge", () => {
   it("should render the correct text", () => {
-    const { getByText } = render(<Badge>Hello World</Badge>);
+    const { getByText } = renderWithTheme(<Badge>Hello World</Badge>);
     expect(getByText("Hello World")).toBeInTheDocument();
   });
 });

@@ -1,0 +1,49 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import { Button } from "./Button";
+
+<Meta title="Components/Button" component={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+# Button
+
+The Button component should be used in situations when a user wants to perform an action.
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      children: "Button",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Success"
+    args={{
+      children: "Button",
+      variant: "success",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Warning"
+    args={{
+      children: "Button",
+      variant: "warning",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Error"
+    args={{
+      children: "Button",
+      variant: "error",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

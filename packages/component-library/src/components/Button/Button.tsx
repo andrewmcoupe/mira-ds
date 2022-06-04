@@ -1,76 +1,68 @@
-import { styled } from "../../../stitches.config";
-import { ComponentProps } from "@stitches/react";
 import React from "react";
+import styled from "styled-components";
+import { ComponentProps } from "react";
+import { variant } from "styled-system";
 
-const StyledButton = styled("button", {
-  borderRadius: "$medium",
-  padding: "0 $medium",
-  fontSize: "$large",
-  cursor: "pointer",
-  userSelect: "none",
-  height: "44px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "max-content",
-  border: "none",
-
-  "&:hover": {
-    opacity: "0.8",
+const variants = {
+  default: {
+    backgroundColor: "gray3",
   },
-
-  "&:disabled": {
-    cursor: "not-allowed",
-    opacity: "0.5",
+  error: {
+    backgroundColor: "red7",
   },
-
-  defaultVariants: {
-    variant: "red",
+  success: {
+    backgroundColor: "green7",
   },
-  variants: {
-    stretch: {
-      true: {
-        width: "100%",
-      },
+  warning: {
+    backgroundColor: "orange6",
+  },
+};
+
+const StyledButton = styled("button")<{ variant?: keyof typeof variants }>(
+  ({ theme }) => ({
+    borderRadius: theme.radii.small,
+    borderStyle: "solid",
+    borderWidth: 2,
+    borderColor: theme.colors.gray9,
+    padding: `0 ${theme.space.medium}`,
+    fontSize: theme.fontSizes.large,
+    color: theme.colors.hiContrast,
+    cursor: "pointer",
+    userSelect: "none",
+    display: "flex",
+    minHeight: theme.space.xxl,
+    alignItems: "center",
+    justifyContent: "center",
+    width: "max-content",
+    boxShadow: `2px 2px 0 0px ${theme.colors.gray9}`,
+    transition: "transform, box-shadow, 0.2s ease-in-out",
+
+    "&:hover": {
+      transform: "translate(-1px, -1px)",
+      boxShadow: `4px 4px 8px 1px ${theme.colors.gray9}`,
     },
-    variant: {
-      red: {
-        backgroundColor: "$red10",
-        color: "white",
-      },
-      green: {
-        backgroundColor: "$green10",
-        color: "white",
-      },
-      blue: {
-        backgroundColor: "$blue10",
-        color: "white",
-      },
-      orange: {
-        backgroundColor: "$orange10",
-        color: "white",
-      },
-      ghost: {
-        backgroundColor: "$gray4",
-        color: "$hiContrast",
 
-        "&:hover": {
-          backgroundColor: "$gray4",
-        },
-      },
-      icon: { width: 44, padding: "0 8px" },
+    "&:active": {
+      transform: "translate(2px, 2px)",
+      boxShadow: "none",
     },
-  },
-});
 
-const Button = React.forwardRef<
+    "&:disabled": {
+      cursor: "not-allowed",
+      opacity: "0.4",
+    },
+  }),
+  variant({ variants })
+);
+
+export const Button = React.forwardRef<
   HTMLButtonElement,
   ComponentProps<typeof StyledButton>
 >((props, forwardedRef) => {
-  // @ts-ignore
   return <StyledButton {...props} ref={forwardedRef} />;
 });
 
 Button.displayName = "Button";
-
-export default Button;
+Button.defaultProps = {
+  variant: "default",
+};

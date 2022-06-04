@@ -1,18 +1,18 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import { describe, it, expect, vi } from "vitest";
-import StyledButton from "./Button";
+import { Button } from "./Button";
+import { vi } from "vitest";
 
 describe("Button", () => {
   it("should render the correct text", () => {
-    const { getByText } = render(<StyledButton>Hello World</StyledButton>);
+    const { getByText } = render(<Button>Hello World</Button>);
     expect(getByText("Hello World")).toBeInTheDocument();
   });
 
   it("should call the onClick handler", () => {
     const mockOnClickHandler = vi.fn();
     const { getByText } = render(
-      <StyledButton onClick={mockOnClickHandler}>Hello World</StyledButton>
+      <Button onClick={mockOnClickHandler}>Hello World</Button>
     );
 
     const button = getByText("Hello World");
