@@ -1,12 +1,18 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
+import { ASSET_FONT_INTER_TTF } from "@mira-ds/design-tokens";
 
 const DEFAULT_THEME = theme;
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Inter';
+    src: url(${ASSET_FONT_INTER_TTF}) format('truetype'),
+  }
+
   * { 
     margin: 0; 
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   *::before {

@@ -1,5 +1,17 @@
 # @mira-ds/theme-provider
 
+## 0.1.0
+
+### Minor Changes
+
+- 38f1bd3: bump
+- Add font
+
+### Patch Changes
+
+- Updated dependencies [38f1bd3]
+  - @mira-ds/design-tokens@1.1.0
+
 ## 0.0.4
 
 ### Patch Changes

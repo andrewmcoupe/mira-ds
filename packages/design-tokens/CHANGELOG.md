@@ -1,5 +1,11 @@
 # @mira-ds/design-tokens
 
+## 1.1.0
+
+### Minor Changes
+
+- 38f1bd3: bump
+
 ## 1.0.18
 
 ### Patch Changes
