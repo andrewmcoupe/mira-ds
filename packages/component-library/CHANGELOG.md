@@ -1,5 +1,13 @@
 # @mira-ds/components
 
+## 1.0.1
+
+### Patch Changes
+
+- 3146ba0: Bump
+- Updated dependencies [3146ba0]
+  - @mira-ds/theme-provider@0.1.1
+
 ## 1.0.0
 
 ### Minor Changes
