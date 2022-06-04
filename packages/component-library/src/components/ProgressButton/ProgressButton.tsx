@@ -1,6 +1,6 @@
 import { motion, useMotionValue } from "framer-motion";
 import { styled, theme } from "../../../stitches.config";
-import Button from "../Button/Button";
+import { Button } from "../Button/Button";
 import React from "react";
 import { ComponentProps } from "@stitches/react";
 

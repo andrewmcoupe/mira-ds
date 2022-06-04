@@ -2,39 +2,39 @@ import { createStitches, createTheme, globalCss } from "@stitches/react";
 export type { VariantProps } from "@stitches/react";
 import * as tokens from "@mira-ds/design-tokens";
 
-export const globalStyles = globalCss({
-  "*": { margin: 0, fontFamily: "$poppins, sans-serif" },
-  "*::before": {
-    boxSizing: "border-box",
-  },
-  "*::after": {
-    boxSizing: "border-box",
-  },
-  body: {
-    lineHeight: 1.5,
-    WebkitFontSmoothing: "antialiased",
-  },
-  img: {
-    display: "block",
-    maxWidth: "100%",
-  },
-  picture: {
-    display: "block",
-    maxWidth: "100%",
-  },
-  video: {
-    display: "block",
-    maxWidth: "100%",
-  },
-  canvas: {
-    display: "block",
-    maxWidth: "100%",
-  },
-  svg: {
-    display: "block",
-    maxWidth: "100%",
-  },
-});
+// export const globalStyles = globalCss({
+//   "*": { margin: 0, fontFamily: "$poppins, sans-serif" },
+//   "*::before": {
+//     boxSizing: "border-box",
+//   },
+//   "*::after": {
+//     boxSizing: "border-box",
+//   },
+//   body: {
+//     lineHeight: 1.5,
+//     WebkitFontSmoothing: "antialiased",
+//   },
+//   img: {
+//     display: "block",
+//     maxWidth: "100%",
+//   },
+//   picture: {
+//     display: "block",
+//     maxWidth: "100%",
+//   },
+//   video: {
+//     display: "block",
+//     maxWidth: "100%",
+//   },
+//   canvas: {
+//     display: "block",
+//     maxWidth: "100%",
+//   },
+//   svg: {
+//     display: "block",
+//     maxWidth: "100%",
+//   },
+// });
 
 export const { styled, getCssText, theme, css } = createStitches({
   utils: {

@@ -26,12 +26,14 @@
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.0.3",
+    "@stitches/react": "^1.2.8",
     "@styled-system/css": "^5.1.5",
     "framer-motion": "^4.1.17",
     "styled-components": "^5.3.5",
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {
+    "@mira-ds/design-tokens": "^1.1.0",
     "@mira-ds/theme-provider": "^0.1.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
