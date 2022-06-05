@@ -1,5 +1,16 @@
 # @mira-ds/components
 
+## 1.1.0
+
+### Minor Changes
+
+- 39e30fb: Fix type safety on button and expose theme
+
+### Patch Changes
+
+- Updated dependencies [39e30fb]
+  - @mira-ds/theme-provider@0.2.0
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @mira-ds/theme-provider
 
+## 0.2.0
+
+### Minor Changes
+
+- 39e30fb: Fix type safety on button and expose theme
+
 ## 0.1.3
 
 ### Patch Changes
