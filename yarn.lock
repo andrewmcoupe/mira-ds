@@ -1818,6 +1818,14 @@
     "@stitches/react" "^1.2.6"
     framer-motion "^4.1.17"
 
+"@mira-ds/theme-provider@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@mira-ds/theme-provider/-/theme-provider-0.0.4.tgz#97f742ff8f14aa452c68c5b44a66a2789dfb6589"
+  integrity sha512-1T1xPFFc3a/6Y8Vl6uSx6+FeUm88l6hGUquMza9ynSJ7P2k5fAmeKHjXjuzM8ZsogZbp7psMO3ba3M3M2ESNxQ==
+  dependencies:
+    "@mira-ds/design-tokens" "^1.0.18"
+    styled-components "^5.3.5"
+
 "@mischnic/json-sourcemap@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@mischnic/json-sourcemap/-/json-sourcemap-0.1.0.tgz#38af657be4108140a548638267d02a2ea3336507"
