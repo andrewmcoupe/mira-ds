@@ -1,5 +1,11 @@
 # @mira-ds/theme-provider
 
+## 0.1.3
+
+### Patch Changes
+
+- Remove global font
+
 ## 0.1.2
 
 ### Patch Changes

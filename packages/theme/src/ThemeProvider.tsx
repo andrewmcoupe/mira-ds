@@ -1,5 +1,4 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-import "@fontsource/inter";
 import { theme } from "./theme";
 
 const DEFAULT_THEME = theme;
@@ -7,7 +6,6 @@ const DEFAULT_THEME = theme;
 const GlobalStyle = createGlobalStyle`
   * { 
     margin: 0; 
-    font-family: "Inter", sans-serif;
   }
 
   *::before {
