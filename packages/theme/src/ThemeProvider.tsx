@@ -40,4 +40,4 @@ const MiraThemeProvider = ({
   </>
 );
 
-export { MiraThemeProvider };
+export { MiraThemeProvider, theme as miraTheme };

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ComponentProps } from "react";
 import { variant } from "styled-system";
 
 const variants = {
@@ -18,7 +17,8 @@ const variants = {
   },
 };
 
-const StyledButton = styled("button")<{ variant?: keyof typeof variants }>(
+const StyledButton = styled.button<{ variant?: keyof typeof variants }>(
+  variant({ variants }),
   ({ theme }) => ({
     borderRadius: theme.radii.small,
     borderStyle: "solid",
@@ -51,16 +51,14 @@ const StyledButton = styled("button")<{ variant?: keyof typeof variants }>(
       cursor: "not-allowed",
       opacity: "0.4",
     },
-  }),
-  variant({ variants })
+  })
 );
 
-export const Button = React.forwardRef<
-  HTMLButtonElement,
-  ComponentProps<typeof StyledButton>
->((props, forwardedRef) => {
-  return <StyledButton {...props} ref={forwardedRef} />;
-});
+export const Button = React.forwardRef<HTMLButtonElement>(
+  (props, forwardedRef) => {
+    return <StyledButton {...props} ref={forwardedRef} />;
+  }
+) as typeof StyledButton;
 
 Button.displayName = "Button";
 Button.defaultProps = {
