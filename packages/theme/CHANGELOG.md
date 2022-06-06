@@ -1,5 +1,12 @@
 # @mira-ds/theme-provider
 
+## 0.2.1
+
+### Patch Changes
+
+- 1ce4e72: Remove dev dependency
+- 966e910: export default theme
+
 ## 0.2.0
 
 ### Minor Changes
