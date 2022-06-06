@@ -1,7 +1,7 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 
-const DEFAULT_THEME = theme;
+export const DEFAULT_THEME = theme;
 
 const GlobalStyle = createGlobalStyle`
   * { 
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const MiraThemeProvider = ({
+export const MiraThemeProvider = ({
   children,
   theme,
 }: {
@@ -39,5 +39,3 @@ const MiraThemeProvider = ({
     <ThemeProvider theme={theme ?? DEFAULT_THEME}>{children}</ThemeProvider>
   </>
 );
-
-export { MiraThemeProvider, theme as miraTheme };
