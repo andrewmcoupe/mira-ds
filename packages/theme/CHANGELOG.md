@@ -1,5 +1,11 @@
 # @mira-ds/theme-provider
 
+## 0.2.2
+
+### Patch Changes
+
+- export createGlobalStyle
+
 ## 0.2.1
 
 ### Patch Changes

@@ -1,6 +1,7 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 
+export { createGlobalStyle } from "styled-components";
 export const DEFAULT_THEME = theme;
 
 const GlobalStyle = createGlobalStyle`
