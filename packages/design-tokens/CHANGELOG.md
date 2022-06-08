@@ -1,5 +1,11 @@
 # @mira-ds/design-tokens
 
+## 1.2.1
+
+### Patch Changes
+
+- update types reference
+
 ## 1.2.0
 
 ### Minor Changes
