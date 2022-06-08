@@ -1,5 +1,11 @@
 # @mira-ds/theme-provider
 
+## 0.2.3
+
+### Patch Changes
+
+- Use new design tokens
+
 ## 0.2.2
 
 ### Patch Changes
