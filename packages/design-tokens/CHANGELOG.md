@@ -1,5 +1,11 @@
 # @mira-ds/design-tokens
 
+## 1.2.0
+
+### Minor Changes
+
+- Use figmagic for generating design tokens
+
 ## 1.1.0
 
 ### Minor Changes

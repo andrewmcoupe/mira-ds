@@ -1,5 +1,12 @@
 # @mira-ds/components
 
+## 2.0.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @mira-ds/design-tokens@1.2.0
+
 ## 1.1.0
 
 ### Minor Changes

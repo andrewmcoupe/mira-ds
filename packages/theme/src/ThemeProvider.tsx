@@ -1,42 +1,43 @@
-import { ThemeProvider, createGlobalStyle } from "styled-components";
+import { ThemeProvider, Theme } from "theme-ui";
+import { Global } from "@emotion/react";
 import { theme } from "./theme";
 
-export { createGlobalStyle } from "styled-components";
 export const DEFAULT_THEME = theme;
 
-const GlobalStyle = createGlobalStyle`
-  * { 
-    margin: 0; 
-  }
-
-  *::before {
-     box-sizing: border-box;
-  }
-
-  *::after {
-    box-sizing: border-box;
-  }
-
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  img, picture, svg, video, canvas {
-    display: block;
-    max-width: 100%;
-  }
-`;
+export const GlobalStyles = () => (
+  <Global
+    styles={(theme) => ({
+      "*": {
+        boxSizing: "border-box",
+        margin: 0,
+      },
+      "*::before": {
+        boxSizing: "border-box",
+      },
+      "*::after": {
+        boxSizing: "border-box",
+      },
+      body: {
+        lineHeight: "1.5",
+        WebkitFontSmoothing: "antialiased",
+      },
+      "img, picture, svg, video, canvas": {
+        display: "block",
+        maxWidth: "100%",
+      },
+    })}
+  />
+);
 
 export const MiraThemeProvider = ({
   children,
   theme,
 }: {
-  theme?: {};
+  theme?: Theme;
   children: any;
 }) => (
   <>
-    <GlobalStyle />
+    <GlobalStyles />
     <ThemeProvider theme={theme ?? DEFAULT_THEME}>{children}</ThemeProvider>
   </>
 );

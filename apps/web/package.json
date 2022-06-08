@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.11",
-    "@mira-ds/components": "^1.1.0",
+    "@mira-ds/components": "^2.0.0",
     "@mira-ds/theme-provider": "^0.2.2",
     "next": "12.0.8",
     "react": "17.0.2",

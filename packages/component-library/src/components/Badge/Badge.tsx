@@ -1,41 +1,23 @@
-import styled from "styled-components";
-import { variant } from "styled-system";
+/** @jsxImportSource theme-ui */
 
-const variants = {
-  default: {
-    backgroundColor: "gray2",
-    color: "gray11",
-  },
-  error: {
-    backgroundColor: "red3",
-    color: "red11",
-  },
-  success: {
-    backgroundColor: "green4",
-    color: "green11",
-  },
-  warning: {
-    backgroundColor: "orange3",
-    color: "orange11",
-  },
+import React from "react";
+import { ThemeUIStyleObject } from "theme-ui";
+import { WithChildren } from "../../utils/types";
+
+const styles: ThemeUIStyleObject = {
+  borderRadius: "small",
+  border: "none",
+  padding: "tiny",
+  fontSize: "small",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  width: "max-content",
+  lineHeight: "12px",
 };
 
-export type BadgeProps = {
-  variant?: keyof typeof variants;
-};
-
-export const Badge = styled("span")<BadgeProps>(
-  (props) => ({
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    maxWidth: "max-content",
-    borderRadius: props.theme.radii.small,
-    padding: `${props.theme.space.tiny} ${props.theme.space.small}`,
-  }),
-  variant({ variants })
+export const Badge = (props: WithChildren<{ variant?: string }>) => (
+  <span sx={{ ...styles, variant: props.variant }}>{props.children}</span>
 );
 
-Badge.defaultProps = {
-  variant: "default",
-};
+Badge.displayName = "MiraBadge";

@@ -1,45 +1,11 @@
 import * as tokens from "@mira-ds/design-tokens";
+import type { Theme } from "theme-ui";
 
-export const theme = {
-  media: {
-    bp1: `(min-width: 520px)`,
-    bp2: `(min-width: 900px)`,
-    bp3: `(min-width: 1200px)`,
-    bp4: `(min-width: 1800px)`,
-    motion: "(prefers-reduced-motion)",
-    dark: "(prefers-color-scheme: dark)",
-    light: "(prefers-color-scheme: light)",
-  },
-  fontSizes: {
-    tiny: `${tokens.SIZE_FONT_TINY}rem`,
-    small: `${tokens.SIZE_FONT_SMALL}rem`,
-    medium: `${tokens.SIZE_FONT_MEDIUM}rem`,
-    large: `${tokens.SIZE_FONT_LARGE}rem`,
-    xxl: `${tokens.SIZE_FONT_XXL}rem`,
-    xxxl: `${tokens.SIZE_FONT_XXXL}rem`,
-  },
-  space: {
-    tiny: tokens.SIZE_SPACING_TINY,
-    small: tokens.SIZE_SPACING_SMALL,
-    medium: tokens.SIZE_SPACING_MEDIUM,
-    large: tokens.SIZE_SPACING_LARGE,
-    xxl: tokens.SIZE_SPACING_XXL,
-    xxxl: tokens.SIZE_SPACING_XXXL,
-  },
-  zIndices: {
-    beneath: -1,
-    normal: "auto",
-    onTop: 10,
-  },
-  fontWeights: {
-    1: "300",
-    2: "400",
-    3: "500",
-    4: "600",
-    5: "700",
-    6: "800",
-    7: "900",
-    bold: "bold",
+export const theme: Theme = {
+  fonts: {
+    body: "system-ui, sans-serif",
+    heading: '"Inter", sans-serif',
+    monospace: "Menlo, monospace",
   },
   borderWidths: {
     1: "1px",
@@ -54,6 +20,9 @@ export const theme = {
     large: tokens.SIZE_RADII_LARGE,
   },
   colors: {
+    text: tokens.COLOR_BASE_GREY_10,
+    background: tokens.COLOR_BASE_WHITE,
+    primary: tokens.COLOR_BASE_BLUE_9,
     hiContrast: "hsl(206,10%,5%)",
     loContrast: tokens.COLOR_BASE_WHITE,
     red1: tokens.COLOR_BASE_RED_1,
@@ -116,36 +85,40 @@ export const theme = {
     gray10: tokens.COLOR_BASE_GREY_10,
     gray11: tokens.COLOR_BASE_GREY_11,
     gray12: tokens.COLOR_BASE_GREY_12,
-    cardBg: tokens.COLOR_BASE_WHITE,
   },
-  utils: {
-    px: (value: any) => ({
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    py: (value: any) => ({
-      paddingTop: value,
-      paddingBottom: value,
-    }),
-    pb: (value: any) => ({
-      paddingBottom: value,
-    }),
-    pt: (value: any) => ({
-      paddingTop: value,
-    }),
-    mb: (value: any) => ({
-      marginBottom: value,
-    }),
-    mt: (value: any) => ({
-      marginTop: value,
-    }),
-    my: (value: any) => ({
-      "margin-top": value,
-      "margin-bottom": value,
-    }),
-    mx: (value: any) => ({
-      marginTop: value,
-      marginBottom: value,
-    }),
+  breakpoints: ["520px", "768px", "900px", "1200px", "1800px"],
+  buttons: {
+    primary: {
+      backgroundColor: tokens.COLOR_BASE_BLUE_9,
+    },
+    secondary: {
+      backgroundColor: tokens.COLOR_BASE_BLUE_9,
+    },
+    ghost: {
+      backgroundColor: tokens.COLOR_BASE_GREY_4,
+    },
+  },
+  cards: {},
+  lineHeights: {},
+  fontSizes: {
+    tiny: `${tokens.SIZE_FONT_TINY}rem`,
+    small: `${tokens.SIZE_FONT_SMALL}rem`,
+    medium: `${tokens.SIZE_FONT_MEDIUM}rem`,
+    large: `${tokens.SIZE_FONT_LARGE}rem`,
+    xxl: `${tokens.SIZE_FONT_XXL}rem`,
+    xxxl: `${tokens.SIZE_FONT_XXXL}rem`,
+  },
+  space: {
+    tiny: tokens.SIZE_SPACING_TINY,
+    small: tokens.SIZE_SPACING_SMALL,
+    medium: tokens.SIZE_SPACING_MEDIUM,
+    large: tokens.SIZE_SPACING_LARGE,
+    xxl: tokens.SIZE_SPACING_XXL,
+    xxxl: tokens.SIZE_SPACING_XXXL,
+  },
+  zIndices: {
+    beneath: -1,
+    normal: "auto",
+    onTop: 10,
   },
 };

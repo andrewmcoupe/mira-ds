@@ -12,36 +12,28 @@ The Button component should be used in situations when a user wants to perform a
 
 <Canvas>
   <Story
-    name="Default"
+    name="Primary"
     args={{
       children: "Button",
+      variant: "buttons.primary",
     }}
   >
     {Template.bind({})}
   </Story>
   <Story
-    name="Success"
+    name="Secondary"
     args={{
       children: "Button",
-      variant: "success",
+      variant: "buttons.secondary",
     }}
   >
     {Template.bind({})}
   </Story>
   <Story
-    name="Warning"
+    name="Ghost"
     args={{
       children: "Button",
-      variant: "warning",
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-  <Story
-    name="Error"
-    args={{
-      children: "Button",
-      variant: "error",
+      variant: "buttons.ghost",
     }}
   >
     {Template.bind({})}

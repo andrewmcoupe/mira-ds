@@ -12,9 +12,10 @@ The Badge component should be used to display some adjacent information about an
 
 <Canvas>
   <Story
-    name="Default"
+    name="Primary"
     args={{
       children: "#default",
+      variant: "badges.primary",
     }}
   >
     {Template.bind({})}
@@ -23,7 +24,7 @@ The Badge component should be used to display some adjacent information about an
     name="Success"
     args={{
       children: "#success",
-      variant: "success",
+      variant: "badges.secondary",
     }}
   >
     {Template.bind({})}
@@ -32,16 +33,7 @@ The Badge component should be used to display some adjacent information about an
     name="Warning"
     args={{
       children: "#warning",
-      variant: "warning",
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-  <Story
-    name="Error"
-    args={{
-      children: "#error",
-      variant: "error",
+      variant: "badges.ghost",
     }}
   >
     {Template.bind({})}

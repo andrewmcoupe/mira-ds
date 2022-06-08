@@ -1,9 +1,0 @@
-{
-  "size": {
-    "radii": {
-      "small": { "value": "4" },
-      "medium": { "value": "8" },
-      "large": { "value": "9999" }
-    }
-  }
-}
