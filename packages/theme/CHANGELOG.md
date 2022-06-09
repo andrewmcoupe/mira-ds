@@ -1,5 +1,13 @@
 # @mira-ds/theme-provider
 
+## 0.2.4
+
+### Patch Changes
+
+- Bump
+- Updated dependencies
+  - @mira-ds/design-tokens@1.2.2
+
 ## 0.2.3
 
 ### Patch Changes

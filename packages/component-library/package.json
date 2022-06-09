@@ -1,6 +1,6 @@
 {
   "name": "@mira-ds/components",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "source": "src/components/index.tsx",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
-    "@mira-ds/theme-provider": "^0.2.0",
+    "@mira-ds/theme-provider": "^0.2.4",
     "@radix-ui/react-icons": "^1.0.3",
     "@stitches/react": "^1.2.8",
     "@styled-system/css": "^5.1.5",
@@ -36,7 +36,7 @@
     "theme-ui": "^0.14.5"
   },
   "peerDependencies": {
-    "@mira-ds/design-tokens": "^1.2.0",
+    "@mira-ds/design-tokens": "^1.2.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },

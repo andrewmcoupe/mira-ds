@@ -1,8 +1,6 @@
 import { ThemeProvider, Theme } from "theme-ui";
 import { Global } from "@emotion/react";
-import { theme } from "./theme";
-
-export const DEFAULT_THEME = theme;
+import { theme as MiraTheme } from "./theme";
 
 export const GlobalStyles = () => (
   <Global
@@ -38,6 +36,6 @@ export const MiraThemeProvider = ({
 }) => (
   <>
     <GlobalStyles />
-    <ThemeProvider theme={theme ?? DEFAULT_THEME}>{children}</ThemeProvider>
+    <ThemeProvider theme={theme ?? MiraTheme}>{children}</ThemeProvider>
   </>
 );
