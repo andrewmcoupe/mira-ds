@@ -5,10 +5,9 @@ import { ThemeUIStyleObject } from "theme-ui";
 import { WithChildren } from "../../utils/types";
 
 const styles: ThemeUIStyleObject = {
-  borderRadius: "small",
-  border: "none",
-  padding: "tiny",
-  fontSize: "small",
+  borderRadius: "rounded",
+  padding: "1",
+  fontSize: 1,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

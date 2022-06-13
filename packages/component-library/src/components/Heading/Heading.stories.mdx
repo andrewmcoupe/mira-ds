@@ -1,31 +1,95 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Canvas, Meta, Story, Preview, Props } from "@storybook/addon-docs";
 
 import { Heading } from "./Heading";
 
 <Meta title="Components/Heading" component={Heading} />
 
-export const Template = (args) => <Heading {...args} />;
-
 # Heading
 
-The Heading component should be used as a page or section title.
+The Heading component should be used as the title to a page or section.
 
-<Canvas>
+### Usage
+
+```jsx
+import { Heading } from "@mira-ds/components";
+
+<Heading>Learn more</Heading>;
+```
+
+### h1
+
+<Preview>
   <Story
-    name="Default"
+    name="h1"
     args={{
-      children: "Welcome to the show",
+      as: "h1",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Heading {...args}>Mira Design System</Heading>}
   </Story>
+</Preview>
+
+### h2
+
+<Preview>
   <Story
-    name="Emphasised"
+    name="h2"
     args={{
-      children: "Welcome to the show",
-      variant: "emphasis",
+      as: "h2",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Heading {...args}>Mira Design System</Heading>}
   </Story>
-</Canvas>
+</Preview>
+
+### h3
+
+<Preview>
+  <Story
+    name="h3"
+    args={{
+      as: "h3",
+    }}
+  >
+    {(args) => <Heading {...args}>Mira Design System</Heading>}
+  </Story>
+</Preview>
+
+### h4
+
+<Preview>
+  <Story
+    name="h4"
+    args={{
+      as: "h4",
+    }}
+  >
+    {(args) => <Heading {...args}>Mira Design System</Heading>}
+  </Story>
+</Preview>
+
+### h5
+
+<Preview>
+  <Story
+    name="h5"
+    args={{
+      as: "h5",
+    }}
+  >
+    {(args) => <Heading {...args}>Mira Design System</Heading>}
+  </Story>
+</Preview>
+
+### h6
+
+<Preview>
+  <Story
+    name="h6"
+    args={{
+      as: "h6",
+    }}
+  >
+    {(args) => <Heading {...args}>Mira Design System</Heading>}
+  </Story>
+</Preview>

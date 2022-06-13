@@ -1,41 +1,56 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Canvas, Meta, Story, Preview, Props } from "@storybook/addon-docs";
 
 import { Badge } from "./Badge";
 
 <Meta title="Components/Badge" component={Badge} />
 
-export const Template = (args) => <Badge {...args} />;
-
 # Badge
 
-The Badge component should be used to display some adjacent information about an element.
+The Badge component should be used in situations when a user can perform an action.
 
-<Canvas>
+### Usage
+
+```jsx
+import { Badge } from "@mira-ds/components";
+
+<Badge>Learn more</Badge>;
+```
+
+### Primary variant
+
+<Preview>
   <Story
     name="Primary"
     args={{
-      children: "#default",
       variant: "badges.primary",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Badge {...args}>react</Badge>}
   </Story>
+</Preview>
+
+### Secondary variant
+
+<Preview>
   <Story
-    name="Success"
+    name="Secondary"
     args={{
-      children: "#success",
       variant: "badges.secondary",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Badge {...args}>javascript</Badge>}
   </Story>
+</Preview>
+
+### Tertiary variant
+
+<Preview>
   <Story
-    name="Warning"
+    name="Tertiary"
     args={{
-      children: "#warning",
-      variant: "badges.ghost",
+      variant: "badges.tertiary",
     }}
   >
-    {Template.bind({})}
+    {(args) => <Badge {...args}>webdev</Badge>}
   </Story>
-</Canvas>
+</Preview>

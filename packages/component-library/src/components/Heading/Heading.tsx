@@ -1,31 +1,20 @@
-import styled from "styled-components";
-import { variant } from "styled-system";
+/** @jsxImportSource theme-ui */
 
-const DEFAULT_TAG = "h1";
+import type { WithChildren } from "../../utils/types";
+import { Heading as ThemeUiHeading } from "theme-ui";
+// import {theme} from '@mira-ds/theme-provider' - use keys from heading variants to constrain as and variant props
 
-const variants = {
-  default: {
-    background: "none",
-  },
-  emphasis: {
-    background:
-      "linear-gradient(90deg, rgba(75,195,137,1) 35%, rgba(0,106,219,1) 100%)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  },
-};
+type Headings = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
-export const Heading = styled(DEFAULT_TAG)<{ variant?: keyof typeof variants }>(
-  variant({ variants }),
-  ({ theme }) => ({
-    margin: 0,
-    fontSize: theme.fontSizes.xl,
-    overflowWrap: "break-word",
-    fontWeight: theme.fontWeights.bold,
-    marginBottom: theme.space.large,
-  })
-);
+const DEFAULT_TAG: Headings = "h1";
 
-Heading.defaultProps = {
-  variant: "default",
+export const Heading = ({
+  children,
+  as = DEFAULT_TAG,
+}: WithChildren<{ as: Headings }>) => {
+  return (
+    <ThemeUiHeading as={as} variant={as}>
+      {children}
+    </ThemeUiHeading>
+  );
 };

@@ -1,0 +1,37 @@
+import { Canvas, Meta, Story, Preview, Props } from "@storybook/addon-docs";
+
+import { Text } from "./Text";
+
+<Meta title="Components/Text" component={Text} />
+
+# Text
+
+The Text component should be used to render content.
+
+### Usage
+
+```jsx
+import { Text } from "@mira-ds/components";
+
+<Text>Learn more</Text>;
+```
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    {(args) => <Text {...args}>Mira Design System</Text>}
+  </Story>
+</Preview>
+
+### Emphasised
+
+<Preview>
+  <Story name="Emphasised">
+    {(args) => (
+      <Text {...args}>
+        Mira <Text emphasised={true}>Design</Text> System
+      </Text>
+    )}
+  </Story>
+</Preview>

@@ -1,19 +1,21 @@
 import { Canvas, Meta, Story, Preview, Props } from "@storybook/addon-docs";
 
-import { Button } from "./Button";
+import { IconButton } from "./IconButton";
 
-<Meta title="Components/Button" component={Button} />
+<Meta title="Components/IconButton" component={IconButton} />
+
+export const Template = (args) => <IconButton {...args} />;
 
 # Button
 
-The Button component should be used in situations when a user can perform an action.
+The Icon Button component should be used in situations when a user can perform an action.
 
 ### Usage
 
 ```jsx
-import { Button } from "@mira-ds/components";
+import { IconButton } from "@mira-ds/components";
 
-<Button>Learn more</Button>;
+<IconButton icon={"SunIcon"} />;
 ```
 
 ### Primary variant
@@ -23,9 +25,10 @@ import { Button } from "@mira-ds/components";
     name="Primary"
     args={{
       variant: "buttons.primary",
+      icon: "SunIcon",
     }}
   >
-    {(args) => <Button {...args}>Save</Button>}
+    {(args) => <IconButton {...args} />}
   </Story>
 </Preview>
 
@@ -36,9 +39,10 @@ import { Button } from "@mira-ds/components";
     name="Secondary"
     args={{
       variant: "buttons.secondary",
+      icon: "SunIcon",
     }}
   >
-    {(args) => <Button {...args}>Edit</Button>}
+    {(args) => <IconButton {...args} />}
   </Story>
 </Preview>
 
@@ -49,8 +53,9 @@ import { Button } from "@mira-ds/components";
     name="Tertiary"
     args={{
       variant: "buttons.tertiary",
+      icon: "SunIcon",
     }}
   >
-    {(args) => <Button {...args}>Cancel</Button>}
+    {(args) => <IconButton {...args} />}
   </Story>
 </Preview>

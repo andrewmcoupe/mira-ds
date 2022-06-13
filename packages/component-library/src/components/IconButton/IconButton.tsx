@@ -1,32 +1,28 @@
-import React from "react";
-import { styled } from "../../../stitches.config";
-import { Button } from "../index";
+/** @jsxImportSource theme-ui */
+
+import React, { ComponentProps } from "react";
+import { Button, buttonStyles } from "../Button/Button";
 import * as Icons from "@radix-ui/react-icons";
-import { ComponentProps } from "@stitches/react";
 
-export const StyledIconButton = styled(Button, {
-  width: 44,
-  padding: "0 $small",
-});
+type IconButtonProps = {
+  icon: keyof typeof Icons;
+  children?: React.ReactNode;
+} & Omit<ComponentProps<typeof Button>, "children"> &
+  React.ComponentPropsWithRef<"button">;
 
-export type IconButtonProps = {
-  icon?: keyof typeof Icons;
-  ariaLabel?: string;
-  title?: string;
-} & ComponentProps<typeof StyledIconButton>;
+export const StyledButton = (props: IconButtonProps) => {
+  const Icon = Icons[props.icon];
 
-const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
+  return (
+    <button {...props} sx={{ ...buttonStyles, variant: props.variant }}>
+      <Icon />
+      {props.children ? <span sx={{ ml: 1 }}>{props.children}</span> : null}
+    </button>
+  );
+};
+
+export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
   (props, forwardedRef) => {
-    const IconElement = Icons[props.icon ?? "TrashIcon"];
-    return (
-      // @ts-ignore
-      <StyledIconButton {...props} ref={forwardedRef}>
-        <IconElement width={22} height={22} />
-      </StyledIconButton>
-    );
+    return <StyledButton {...props} ref={forwardedRef} />;
   }
 );
-
-IconButton.displayName = "IconButton";
-
-export default IconButton;

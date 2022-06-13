@@ -1,6 +1,8 @@
 import { MiraThemeProvider } from "@mira-ds/theme-provider";
 import * as tokens from "@mira-ds/design-tokens";
-import "@fontsource/inter";
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/700.css";
 import { Global } from "@emotion/react";
 
 export const parameters = {
@@ -46,94 +48,109 @@ export const decorators = [
         <GlobalStyles />
         <MiraThemeProvider
           theme={{
-            fonts: {
-              body: "system-ui, sans-serif",
-              heading: '"Inter", sans-serif',
-              monospace: "Menlo, monospace",
-            },
-            borderWidths: {
-              tiny: "1px",
-              small: "2px",
-              medium: "5px",
-              large: "10px",
-              xl: "25px",
-            },
-            radii: {
-              small: tokens.SIZE_RADII_SMALL,
-              medium: tokens.SIZE_RADII_MEDIUM,
-              large: tokens.SIZE_RADII_LARGE,
-            },
             config: {
               initialColorModeName: "light",
               useBorderBox: true,
-              useLocalStorage: true,
+              useColorSchemeMediaQuery: true,
             },
+            fonts: {
+              body: '"Inter", sans-serif',
+              heading: '"Inter", sans-serif',
+            },
+            fontWeights: {
+              ...tokens.fontWeights,
+              heading: tokens.fontWeights.bold,
+            },
+            radii: tokens.radii,
             colors: {
               modes: {
-                dark: {},
-              },
-              textColorPrimary: tokens.COLOR_BASE_WHITE,
-              textColorSecondary: tokens.COLOR_BASE_GREY_11,
-              primary: tokens.COLOR_BASE_BLUE_9,
-              secondary: tokens.COLOR_BASE_BLUE_5,
-              ghost: tokens.COLOR_BASE_GREY_3,
-            },
-
-            breakpoints: ["520px", "768px", "1020px", "1260px"],
-            badges: {
-              primary: {
-                background: "primary",
-                color: "textColorPrimary",
-              },
-              secondary: {
-                background: "secondary",
-                color: "textColorSecondary",
-              },
-              ghost: {
-                background: "badgeBgGhost",
-                color: "textColorSecondary",
-              },
-            },
-            buttons: {
-              primary: {
-                backgroundImage: (theme) =>
-                  `linear-gradient(to right, ${theme.colors?.primary} 0%, ${theme.colors?.secondary}  100%)`,
-                color: "textColorPrimary",
-                backgroundSize: "200% auto",
-                transition: "background-position 0.5s ease-in-out",
-                "&:hover": {
-                  backgroundPosition: "right center",
+                dark: {
+                  textColorButtonPrimary: tokens.colors.blue5Dark,
+                  textColorButtonSecondary: tokens.colors.blue5,
+                  primary: tokens.colors.orange3,
                 },
               },
-              secondary: {
-                backgroundColor: "secondary",
-                color: "textColorSecondary",
-              },
-              ghost: {
-                backgroundColor: "buttonBgGhost",
-              },
+              textColorButtonPrimary: tokens.colors.blue5Dark,
+              textColorButtonSecondary: tokens.colors.blue5,
+              bodyTextColorEmphasis: tokens.colors.orange2,
+              primary: tokens.colors.blue4,
+              secondary: tokens.colors.blue5Dark,
             },
-            lineHeights: {},
-            fontSizes: {
-              tiny: `${tokens.SIZE_FONT_TINY}rem`,
-              small: `${tokens.SIZE_FONT_SMALL}rem`,
-              medium: `${tokens.SIZE_FONT_MEDIUM}rem`,
-              large: `${tokens.SIZE_FONT_LARGE}rem`,
-              xl: `${tokens.SIZE_FONT_XL}rem`,
-              xxl: `${tokens.SIZE_FONT_XXL}rem`,
-            },
-            space: {
-              tiny: tokens.SIZE_SPACING_TINY,
-              small: tokens.SIZE_SPACING_SMALL,
-              medium: tokens.SIZE_SPACING_MEDIUM,
-              large: tokens.SIZE_SPACING_LARGE,
-              xl: tokens.SIZE_SPACING_XL,
-              xxl: tokens.SIZE_SPACING_XXL,
-            },
+            fontSizes: tokens.fontSizes,
+            space: tokens.spacing,
             zIndices: {
               beneath: -1,
               normal: "auto",
               onTop: 10,
+            },
+            breakpoints: Object.values(tokens.mediaQueries),
+            /* Element variant styles */
+            buttons: {
+              primary: {
+                backgroundColor: "primary",
+                color: "textColorButtonPrimary",
+              },
+              secondary: {
+                backgroundColor: "secondary",
+                color: "textColorButtonSecondary",
+              },
+              tertiary: {
+                backgroundColor: "transparent",
+                color: "textColorButtonSecondary",
+              },
+            },
+            badges: {
+              primary: {
+                backgroundColor: "primary",
+                color: "white",
+              },
+              secondary: {
+                backgroundColor: "secondary",
+              },
+              ghost: {
+                backgroundColor: tokens.colors.blue5Dark,
+              },
+            },
+            text: {
+              heading: {
+                color: "primary",
+                margin: 0,
+                fontSize: 8,
+                overflowWrap: "break-word",
+                marginBottom: 4,
+              },
+              h1: {
+                variant: "text.heading",
+                fontSize: 8,
+              },
+              h2: {
+                variant: "text.heading",
+                fontSize: 6,
+              },
+              h3: {
+                variant: "text.heading",
+                fontSize: 5,
+              },
+              h4: {
+                variant: "text.heading",
+                fontSize: 4,
+              },
+              h5: {
+                variant: "text.heading",
+                fontSize: 3,
+              },
+              h6: {
+                variant: "text.heading",
+                fontSize: 2,
+              },
+              emphasis: {
+                variant: "text.heading",
+                background: (theme) =>
+                  `linear-gradient(90deg, ${theme.colors.primary} 35%, ${theme.colors.secondary} 100%)`,
+
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              },
             },
           }}
         >

@@ -1,18 +1,23 @@
 /** @jsxImportSource theme-ui */
 
 import React, { ComponentProps } from "react";
-import { ThemeUIStyleObject } from "theme-ui";
+import { ThemeUIStyleObject, Button as ThemeUiButton } from "theme-ui";
 
-const styles: ThemeUIStyleObject = {
-  borderRadius: "small",
+export type ButtonProps = {
+  variant?: string;
+  children: React.ReactNode;
+};
+
+export const buttonStyles: ThemeUIStyleObject = {
+  borderRadius: "soft",
   border: "none",
-  padding: "small",
-  px: "medium",
-  fontSize: "large",
+  py: "1",
+  px: "2",
+  fontSize: 4,
   cursor: "pointer",
   userSelect: "none",
   display: "flex",
-  minHeight: "large",
+  minHeight: "44px",
   alignItems: "center",
   justifyContent: "center",
   width: "max-content",
@@ -30,19 +35,22 @@ const styles: ThemeUIStyleObject = {
 const StyledButton = ({
   variant,
   children,
-}: {
-  variant?: string;
-  children: React.ReactNode;
-  ref?: React.ForwardedRef<HTMLButtonElement> | undefined;
-}) => {
-  return <button sx={{ ...styles, variant }}>{children}</button>;
+  ...restProps
+}: ButtonProps & React.ComponentPropsWithRef<"button">) => {
+  return (
+    <ThemeUiButton {...restProps} sx={{ ...buttonStyles, variant }}>
+      {children}
+    </ThemeUiButton>
+  );
 };
 
 export const Button = React.forwardRef<
   HTMLButtonElement,
   ComponentProps<typeof StyledButton>
 >((props, forwardedRef) => {
-  return <StyledButton {...props} ref={forwardedRef} />;
+  return (
+    <StyledButton {...props} ref={forwardedRef} children={props.children} />
+  );
 });
 
-Button.displayName = "MiraButton";
+Button.displayName = "Button";
